@@ -1,6 +1,7 @@
 version: "3"
 services:
 
+
     redis:
         image: docker-server/docker-org/redis:alpine
         ports:
@@ -40,7 +41,6 @@ services:
         networks:
             - frontend
             - backend
-
 
 networks:
     frontend:
