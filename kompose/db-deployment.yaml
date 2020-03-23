@@ -21,6 +21,8 @@ spec:
       containers:
       - image: docker-server/docker-org/postgres:9.4
         name: db
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
       restartPolicy: Always
       imagePullSecrets:
       - name: regcred
