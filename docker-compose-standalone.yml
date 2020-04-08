@@ -10,8 +10,6 @@ services:
 
     db:
         image: docker-server/docker-org/postgres:9.4
-        command: [ "/bin/bash", "-c", "--" ]
-        args: [ "while true; do sleep 30; done;" ]
         volumes:
             - db-data:/var/lib/postgresql/data
         networks:
