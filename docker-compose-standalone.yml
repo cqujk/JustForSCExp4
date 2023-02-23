@@ -43,10 +43,10 @@ services:
             - frontend
             - backend
 
-
 networks:
     frontend:
     backend:
 
 volumes:
     db-data:
+    
