@@ -602,37 +602,6 @@
   </div>
   <!-- /.modal -->
 </div>
-<!-- 引入Bootstrap模态框 -->
-<div class="modal fade" id="couponModal" tabindex="-1" role="dialog" aria-labelledby="couponModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="couponModalLabel">您的优惠券</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>恭喜您！您已成功领取优惠券。</p>
-        <p>优惠券代码：<strong>PHOENIX10OFF</strong></p>
-        <p>有效期至：2023年12月31日</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 在custom-script.js中添加以下JavaScript代码 -->
-<script>
-$(document).ready(function() {
-  $('#coupon-button').click(function() {
-    $('#couponModal').modal('show');
-  });
-});
-</script>
-
 <!--jQuery 3.3.1 via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Popper 1.14.3 via CDN, needed for Bootstrap Tooltips & Popovers -->
